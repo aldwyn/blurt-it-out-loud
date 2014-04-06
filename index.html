@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+		<title>Blurt It Out Loud</title>
+		<style type="text/css">
+			#blurter {
+				width: 100%;
+				height: 2em;
+				text-align: center;
+				margin-top: 15px;
+				font-size: 2em;
+				color: #2F96B4
+			}
+
+			#blurtAlert {
+				width: 100%;
+				height: 23px;
+				text-align: center;
+				font-size: 23px;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="hero-unit" style="margin-top: 30px">
+				<h1 style="color: #2F96B4">
+					Blurt It Out Loud | <small>C'mon baby!</small>
+				</h1>
+				<input id="blurter" type="text" value="@ThisTwinkAldwyn" />
+				<input id="blurtAlert" type="text" autofocus placeholder="Dare to say something crazy in at most 2048 characters..." />
+				<input id="process" type="submit" class="btn btn-large btn-info"/>
+				<div class="checkbox pull-right">
+					<input id="toggle" type="checkbox" />
+					<label for="toggle">Load XML data to blurt table below</label>
+				</div>
+			</div>
+			<div class="page-header">
+				<span style="font-size: 2em">Blurts</span>
+			</div>
+			<table id="table" class="table table-bordered">
+				<thead id="thead" style="color: #2F96B4">
+					<th>Blurter</th>
+					<th>Blurt Alert</th>
+					<th>Blurt Time</th>
+				</thead>
+				<tbody id="toAppend"></tbody>
+			</table>
+		</div>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
